@@ -5,7 +5,12 @@
       <h4>{{options.title}}
         <small>&nbsp;{{options.helpMessage}}</small>
       </h4>
-      <input class="form-control" placeholder="{{options.filterPlaceHolder}}" ng-model="searchTerm">
+      <select class="form-control" ng-model="searchTerm">
+        <option ng-selected="true" value="">TODOS</option>
+          <option value="{{g.name}}" ng-repeat="g in options.category">
+          <b>{{g.name | uppercase}}</b>
+        </option>
+      </select>
     </div>
   </div>
   <div class="row">
