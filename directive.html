@@ -5,9 +5,9 @@
       <h4>{{options.title}}
         <small>&nbsp;{{options.helpMessage}}</small>
       </h4>
-      <select class="form-control" ng-model="searchTerm">
+      <select class="form-control" ng-model="search">
         <option ng-selected="true" value="">TODOS</option>
-          <option value="{{g.name}}" ng-repeat="g in options.category">
+          <option value="{{g.name}}" ng-repeat="g in options.categories">
           <b>{{g.name | uppercase}}</b>
         </option>
       </select>
@@ -21,7 +21,7 @@
         </button>
       <div class="pool">
         <ul>
-          <li ng-repeat="item in options.items | filter: searchTerm | orderBy: options.orderProperty">
+          <li ng-repeat="item in options.items | filter: search | orderBy: options.orderProperty">
            <a href="" ng-click="transfer(options.items, options.selectedItems, options.items.indexOf(item))">
             {{item.name}}&nbsp;&rArr;</a>
           </li>
