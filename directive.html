@@ -22,9 +22,9 @@
          </button>
        </div>
      </div>
-      <div class="pool">
+      <div class="list">
         <ul>
-          <li ng-repeat="item in options.items | filter: search | orderBy: options.orderProperty">
+          <li  ng-repeat="item in options.items | filter: search | orderBy: options.orderProperty">
            <a href="" ng-click="transfer(options.items, options.selectedItems, options.items.indexOf(item))">
             {{item.name}}&nbsp;&rArr;</a>
           </li>
@@ -39,7 +39,7 @@
           </button>
         </div>
       </div>
-      <div class="pool">
+      <div class="list">
         <ul>
           <li ng-repeat="item in options.selectedItems | orderBy: options.orderProperty">
             <a href="" ng-click="transfer(options.selectedItems, options.items, options.selectedItems.indexOf(item))">

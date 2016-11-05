@@ -6,7 +6,7 @@
   margin: 10px;
 }
 
-.dualmultiselect .pool {
+.dualmultiselect .list {
   border: 1px solid #999;
   border-radius: 4px;
   padding: 10px;
@@ -15,17 +15,17 @@
   overflow-y: scroll;
 }
 
-.dualmultiselect .pool ul {
+.dualmultiselect .list ul {
   list-style: none;
   padding-left: 0px;
 }
 
-.dualmultiselect .pool ul li {
+.dualmultiselect .list ul li {
   width: 100%;
   padding: 4px 8px 4px 4px;
   border-bottom: 1px dotted #CFCFCF;
 }
 
-.dualmultiselect .pool ul li a:hover {
+.dualmultiselect .list ul li a:hover {
   text-decoration: none;
 }
