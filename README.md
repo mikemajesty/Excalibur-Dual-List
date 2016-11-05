@@ -18,3 +18,13 @@
 ```
   <dualmultiselect options="options"> </dualmultiselect>
 ```
+
+### $scope.options
+<ul>
+<li><b>title</b> - Title that will be displayed in the directive.</li>
+<li><b>helpMessage</b> - Sub title that will be displayed in the directive.</li>
+<li><b>orderProperty</b> - Order of the items will appear in the duallist.</li>
+<li><b>items</b> - Items that appear in duallist.</li>
+<li><b>categories</b> - Items that will appear in select that it be used to filter the duallist.</li>
+<li><b>selectedItems</b> - Items that were selected by the user.</li>
+</ul>
