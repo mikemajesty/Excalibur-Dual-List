@@ -6,7 +6,7 @@
 
 ##### Import to your project the dualListDirective.js and duallist.cs files then reference the files in your project
 ```
-  <script src="your/path/to/directive/dualListDirective.js"></script>
+  <script src="your/path/to/directive/js/dualListDirective.js"></script>
   <link rel="stylesheet" href="your/path/to/directive/css/duallist.css">
 ```
 ##### In your controller use the code below
