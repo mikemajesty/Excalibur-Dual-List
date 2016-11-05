@@ -15,10 +15,13 @@
   </div>
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-6">
-        <label>{{options.labelAll}}</label>
-        <button type="button" class="btn btn-default btn-xs" ng-click="transfer(options.items, options.selectedItems, -1)">
-          Select All
-        </button>
+      <div class="row">
+       <div class="col-lg-8 col-md-8 col-sm-8 pull-right">
+         <button type="button" class="btn btn-default btn-xs" ng-click="transfer(options.items, options.selectedItems, -1)">
+           Move All ->
+         </button>
+       </div>
+     </div>
       <div class="pool">
         <ul>
           <li ng-repeat="item in options.items | filter: search | orderBy: options.orderProperty">
@@ -29,10 +32,13 @@
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6">
-      <label>{{options.labelSelected}}</label>
-          <button type="button" class="btn btn-default btn-xs" ng-click="transfer(options.selectedItems, options.items, -1)">
-              Deselect All
+       <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-7">
+          <button type="button" class="btn btn-default btn-xs pull-right" ng-click="transfer(options.selectedItems, options.items, -1)">
+               &#60;-  Move All
           </button>
+        </div>
+      </div>
       <div class="pool">
         <ul>
           <li ng-repeat="item in options.selectedItems | orderBy: options.orderProperty">
