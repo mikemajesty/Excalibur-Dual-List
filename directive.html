@@ -6,7 +6,7 @@
         <small>&nbsp;{{options.helpMessage}}</small>
       </h4>
       <select class="form-control" ng-model="search">
-        <option ng-selected="true" value="">TODOS</option>
+        <option ng-selected="true" value="">All</option>
           <option value="{{g.name}}" ng-repeat="g in options.categories">
           <b>{{g.name | uppercase}}</b>
         </option>
@@ -37,7 +37,7 @@
         <ul>
           <li ng-repeat="item in options.selectedItems | orderBy: options.orderProperty">
             <a href="" ng-click="transfer(options.selectedItems, options.items, options.selectedItems.indexOf(item))">
-              &lArr;&nbsp;{{item.name}}
+              &lArr;&nbsp;{{item.category}}-{{item.name}}
             </a>
           </li>
         </ul>
