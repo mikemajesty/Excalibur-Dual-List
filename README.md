@@ -28,3 +28,11 @@
 <li><b>categories</b> - Items that will appear in select that it be used to filter the duallist.</li>
 <li><b>selectedItems</b> - Items that were selected by the user.</li>
 </ul>
+
+#### Used versions
+
+##### Bootstrap 
+"version": "3.3.7"
+
+##### Angular
+version": "1.5.8 
