@@ -36,8 +36,8 @@
 
 ##### Angular
 version": "1.5.8 
-
-###### License
+<hr>
+### License
 
 It is available under the MIT license.
 [License](https://opensource.org/licenses/mit-license.php)
