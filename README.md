@@ -41,5 +41,3 @@ version": "1.5.8
 
 It is available under the MIT license.
 [License](https://opensource.org/licenses/mit-license.php)
-
-Copyright (c) 2016 Mike Lima
