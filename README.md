@@ -2,16 +2,53 @@
 
 [![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)](https://postimg.org/image/72a6usiyb/)
 
+# How to instaal
+```
+ bower install bootduallist
+```
+
 # How to use
 
-##### Import to your project the dualListDirective.js and duallist.cs files then reference the files in your project
+##### Import to your project the dualListDirective.js and duallist.cs files in bower_components folder
 ```
-  <script src="your/path/to/directive/js/dualListDirective.js"></script>
-  <link rel="stylesheet" href="your/path/to/directive/css/duallist.css">
+  <script src="bower_components/bootduallist/dist/js/dualListDirective.js"></script>
+  <link rel="stylesheet" href="bower_components/bootduallist/dist/css/duallist.css">
 ```
+Then refer to your module
+```
+  var app = angular.module('app', ['dualmultiselect']);
+```
+
 ##### In your controller use the code below
 
-[![duallist.png](https://s11.postimg.org/p0kf02vo3/duallist.png)](https://postimg.org/image/pdbt69dxr/)
+```
+$scope.options = {
+            title: 'Demo: your title',
+            helpMessage: 'Demo: your help message',
+            orderProperty: '[name, category]',
+            items: [
+                      {'category': 'FF9', 'name': 'Zidane'},
+                      {'category': 'FF9', 'name': 'Garnet'},
+                      {'category': 'FF9', 'name': 'Vivi'},
+
+                      {'category': 'FF8', 'name': 'Squall Leonhart'},
+                      {'category': 'FF8', 'name': 'Quistis Trepe'},
+                      {'category': 'FF8', 'name': 'Zell Dincht'},
+
+                      {'category': 'FF7', 'name': 'Cloud Strife'},
+                      {'category': 'FF7', 'name': 'Aerith Gainsborough'},
+                      {'category': 'FF7', 'name': 'Vincent Valentine'},
+
+                   ],
+            categories: [
+                          {'name': 'FF9'},
+                          {'name': 'FF8'},
+                          {'name': 'FF7'}
+                        ],
+            selectedItems: []
+        };
+      });
+```
 
 ##### In your page use
 
