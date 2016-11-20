@@ -1,6 +1,6 @@
 {
   "name": "bootduallist",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "[![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)]",
   "main": "package/dualbootlist.js",
   "scripts": {
