@@ -3,25 +3,25 @@
 [![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)](https://postimg.org/image/72a6usiyb/)
 
 # How to install
-```
+```JavaScript
  bower install bootduallist
 ```
 
 # How to use
 
 ##### Import to your project the dualListDirective.js and duallist.cs files in bower_components folder
-```
+```JavaScript
   <script src="bower_components/bootduallist/dist/js/dualListDirective.js"></script>
   <link rel="stylesheet" href="bower_components/bootduallist/dist/css/duallist.css">
 ```
 Then refer to your module
-```
+```JavaScript
   var app = angular.module('app', ['dualmultiselect']);
 ```
 
 ##### In your controller use the code below
 
-```
+```JavaScript
 $scope.options = {
     title: 'Demo: your title',
     helpMessage: 'Demo: your help message',
@@ -52,7 +52,7 @@ $scope.options = {
 
 ##### In your page use
 
-```
+```Html
   <dualmultiselect options="options"> </dualmultiselect>
 ```
 
