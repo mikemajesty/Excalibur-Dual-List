@@ -1,10 +1,10 @@
-# BootstrapDualList - The DualList easier to use in angular.
+# ExcaliburDualList - The DualList easier to use in angular.
 
 [![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)](https://postimg.org/image/72a6usiyb/)
 
 # How to install
 ```JavaScript
- bower install bootduallist
+ bower install excalibur-duallist
 ```
 
 # How to use
@@ -53,7 +53,7 @@ $scope.options = {
 ##### In your page use
 
 ```Html
-  <dualmultiselect options="options"> </dualmultiselect>
+  	<excalibur-dual-list options="options"> </excalibur-dual-list>
 ```
 
 ### $scope.options
@@ -72,7 +72,7 @@ $scope.options = {
 "version": "3.3.7"
 
 ##### Angular
-version": "1.5.8 
+version": "1.2.32 
 <hr>
 
 ### License

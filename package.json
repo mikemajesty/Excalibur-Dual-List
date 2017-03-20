@@ -1,19 +1,19 @@
 {
-  "name": "bootduallist",
+  "name": "excalibur-duallist",
   "version": "1.0.2",
   "description": "[![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)]",
-  "main": "package/dualbootlist.js",
+  "main": "excalibur-duallist.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikemajesty/BootstrapDualList.git"
+    "url": "git+https://github.com/mikemajesty/Excalibur-Dual-List.git"
   },
   "author": "Mike Lima",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikemajesty/BootstrapDualList/issues"
+    "url": "https://github.com/mikemajesty/Excalibur-Dual-List/issues"
   },
   "dependencies": {
     "angular": "^1.2.32",

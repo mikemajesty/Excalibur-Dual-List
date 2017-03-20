@@ -1,7 +1,7 @@
 (function(angular) {
   'use strict';
   angular.module('app')
-    .controller('BoostrapDualListController', ['$scope', '$filter', function($scope, $filter) {
+    .controller('ExcaliburDualListController', ['$scope', function($scope) {
 
       var items = [
         { 'category': 'FF9', 'name': 'Zidane' },
@@ -21,8 +21,6 @@
       var allCategories = items.map( function (item) { return item.category; });
 
       var uniqueCategories = unique(allCategories);
-
-      console.log('teste', uniqueCategories)
 
       $scope.options = {
         title: 'Demo: your title',

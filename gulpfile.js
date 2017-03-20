@@ -5,22 +5,22 @@ var concat = require('gulp-concat');
 var uglifycss = require('gulp-uglifycss');
 
 gulp.task('js', function () {
-	return gulp.src('bootstrap-duallist.js')
+	return gulp.src('excalibur-duallist.js')
     .pipe(babel({
 			presets: ['es2015']
 		}))
 		.pipe(uglify({ mangle: false }))
-		.pipe(concat('bootstrap-duallist.min.js'))
+		.pipe(concat('excalibur-duallist.min.js'))
 		.pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('css', function () {
-  gulp.src('bootstrap-duallist.css')
+  gulp.src('excalibur-duallist.css')
     .pipe(uglifycss({
       "maxLineLen": 80,
       "uglyComments": true
     }))
-		.pipe(concat('bootstrap-duallist.min.css'))
+		.pipe(concat('excalibur-duallist.min.css'))
     .pipe(gulp.dest('dist/css/'));
 });
 

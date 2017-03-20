@@ -1,10 +1,12 @@
-angular.module("app", []).directive("dualmultiselect", [function() {
+angular.module("app", []).directive("excaliburDualList", [function() {
+
 	return {
 		restrict: 'E',
 		scope: {
 			options: '='
 		},
 		controller: function($scope) {
+
 			$scope.transfer = function(from, to, index) {
 				if (index >= 0) {
 					to.push(from[index]);
@@ -17,6 +19,7 @@ angular.module("app", []).directive("dualmultiselect", [function() {
 				}
 			};
 		},
-		templateUrl: 'bootstrap-duallist.html'
+		templateUrl: 'excalibur-duallist.html'
 	};
+
 }]);
