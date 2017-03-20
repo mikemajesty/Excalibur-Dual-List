@@ -1,9 +1,8 @@
-(angular);
 (function(angular) {
 'use strict';
 angular.module('app')
-  .controller('BoostrapDualListController', ['$scope', ($scope) => {
-      console.log('teste')
+  .controller('BoostrapDualListController', ['$scope', function ($scope) {
+
       $scope.options = {
         title: 'Demo: your title',
         helpMessage: 'Demo: your help message',
