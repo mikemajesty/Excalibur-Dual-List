@@ -3,7 +3,7 @@
 'use strict';
 angular.module('app')
   .controller('BoostrapDualListController', ['$scope', ($scope) => {
-
+      console.log('teste')
       $scope.options = {
         title: 'Demo: your title',
         helpMessage: 'Demo: your help message',
