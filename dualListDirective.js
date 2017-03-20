@@ -1,4 +1,4 @@
-angular.module("dualmultiselect", []).directive("dualmultiselect", [function() {
+angular.module("app", []).directive("dualmultiselect", [function() {
 	return {
 		restrict: 'E',
 		scope: {
