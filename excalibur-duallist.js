@@ -19,7 +19,7 @@ angular.module("app", []).directive("excaliburDualList", [function() {
 				}
 			};
 		},
-		templateUrl: 'excalibur-duallist.html'
+		templateUrl: 'bower_components/excalibur-duallist/excalibur-duallist.html'
 	};
 
 }]);
