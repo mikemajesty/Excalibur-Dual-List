@@ -24,7 +24,7 @@
 
         ],
         itemsOrderProperty: '[category, name]',
-        categories: ["FF7", "ff8", "FF9"],
+        categories: ["FF7", "FF8", "FF9"],
         selectedItems: []
       };
 
