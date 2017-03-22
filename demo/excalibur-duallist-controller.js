@@ -6,8 +6,7 @@
       $scope.options = {
         title: 'Demo: your title',
         helpMessage: 'Demo: your help message',
-        orderProperty: '[category, name]',
-        selectOptions: {initialText: "All", isDisable: true},
+        selectOptions: {initialText: "ALL", isDisable: false, uppercase: true},
         items: [
           { 'category': 'FF8', 'name': 'Squall Leonhart' },
           { 'category': 'FF8', 'name': 'Quistis Trepe' },
@@ -24,7 +23,8 @@
           { 'category': 'FF7', 'name': 'Vincent Valentine' },
 
         ],
-        categories: ["FF7", "FF8", "FF9"],
+        itemsOrderProperty: '[category, name]',
+        categories: ["FF7", "ff8", "FF9"],
         selectedItems: []
       };
 
