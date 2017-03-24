@@ -50,13 +50,13 @@ $scope.options = {
 ##### In your page use
 
 ```Html
-  	<excalibur-dual-list options="options"> </excalibur-dual-list>
+  <excalibur-dual-list options="options"> </excalibur-dual-list>
 ```
 
 
 ### $scope.options
 
-* **title**(optional): Title that will be displayed in the directive input text.;
+* **title:**(optional): Title that will be displayed in the directive input text.;
 * **title: {label}**(optional): Label in input text.;
 * **title: {helpMessage}**(optional): Sub label in input text.;
 * **selectOptions:**(optional): Information about the input select.;
