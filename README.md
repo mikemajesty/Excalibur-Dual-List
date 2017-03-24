@@ -1,4 +1,4 @@
-# ExcaliburDualList - The DualList easier to use in angular.
+# Excalibur-Dual-List - The DualList easier to use in angular.
 
 [![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)](https://postimg.org/image/72a6usiyb/)
 
@@ -11,43 +11,40 @@
 
 ##### Import to your project the dualListDirective.js and duallist.cs files in bower_components folder
 ```JavaScript
-  <script src="bower_components/bootduallist/dist/js/dualListDirective.js"></script>
-  <link rel="stylesheet" href="bower_components/bootduallist/dist/css/duallist.css">
+  <script type="text/javascript" src="/bower_components/excalibur-duallist/dist/js/excalibur-duallist.min.js"></script>
+  <link rel="stylesheet" href="/bower_components/excalibur-duallist/dist/css/excalibur-duallist.min.css">
 ```
 Then refer to your module
 ```JavaScript
-  var app = angular.module('app', ['dualmultiselect']);
+  var app = angular.module('app', ['excaliburDualList']);
 ```
 
 ##### In your controller use the code below
 
 ```JavaScript
 $scope.options = {
-    title: 'Demo: your title',
-    helpMessage: 'Demo: your help message',
-    orderProperty: '[name, category]',
+    title: {label: 'Demo: your title', helpMessage: 'Demo: your help message'},
+    selectOptions: {initialText: "ALL", isDisable: false, uppercase: true},
     items: [
-              {'category': 'FF9', 'name': 'Zidane'},
-              {'category': 'FF9', 'name': 'Garnet'},
-              {'category': 'FF9', 'name': 'Vivi'},
+      { 'category': 'FF8', 'name': 'Squall Leonhart' },
+      { 'category': 'FF8', 'name': 'Quistis Trepe' },
+      { 'category': 'FF8', 'name': 'Zell Dincht' },
 
-              {'category': 'FF8', 'name': 'Squall Leonhart'},
-              {'category': 'FF8', 'name': 'Quistis Trepe'},
-              {'category': 'FF8', 'name': 'Zell Dincht'},
+      { 'category': 'FF9', 'name': 'Zidane' },
+      { 'category': 'FF9', 'name': 'Garnet' },
+      { 'category': 'FF9', 'name': 'Vivi' },
 
-              {'category': 'FF7', 'name': 'Cloud Strife'},
-              {'category': 'FF7', 'name': 'Aerith Gainsborough'},
-              {'category': 'FF7', 'name': 'Vincent Valentine'},
+      { 'category': 'FF7', 'name': 'Cloud Strife' },
+      { 'category': 'FF7', 'name': 'Aerith Gainsborough' },
+      { 'category': 'FF7', 'name': 'Vincent Valentine' },
 
-           ],
-    categories: [
-                  {'name': 'FF9'},
-                  {'name': 'FF8'},
-                  {'name': 'FF7'}
-                ],
+    ],
+    itemsOrderProperty: '[category, name]',
+    categories: ["FF7", "FF8", "FF9"],
+    button: {leftText: "Move All" , rightText: "Move All"},
     selectedItems: []
-  };
-});
+};
+
 ```
 
 ##### In your page use
@@ -56,15 +53,23 @@ $scope.options = {
   	<excalibur-dual-list options="options"> </excalibur-dual-list>
 ```
 
+
 ### $scope.options
-<ul>
-<li><b>title</b> - Title that will be displayed in the directive.</li>
-<li><b>helpMessage</b> - Sub title that will be displayed in the directive.</li>
-<li><b>orderProperty</b> - Order of the items will appear in the duallist.</li>
-<li><b>items</b> - Item that will appear on the no dual list.</li>
-<li><b>categories</b> - Items that will appear in select that it be used to filter the duallist.</li>
-<li><b>selectedItems</b> - Items that were selected by the user.</li>
-</ul>
+
+* **title**(optional): Title that will be displayed in the directive input text.;
+* **title: {label}**(optional): Label in input text.;
+* **title: {helpMessage}**(optional): Sub label in input text.;
+* **selectOptions:**(optional): Information about the input select.;
+* **selectOptions: {initialText}**(optional): First text that will displayed in first select input element.;
+* **selectOptions: {isDisable}**(optional): Indicated if the first select text is disabled.;
+* **selectOptions: {uppercase}**(optional): Indicated if the all text options in select input is uppercase.;
+* **items:**(required): Item that will appear on the no dual list.;
+* **itemsOrderProperty:**(optional): Order of the items will appear in the duallist.;
+* **categories:**(required): Items that will appear in select that it be used to filter the duallist.;
+* **button:**(required): Information about the input button that is used to move all elements.;
+* **button: {leftText}**(required): Button left text;
+* **button: {rightText}**(required): Button right text;
+* **selectedItems:**(required): Items that were selected by the user.;
 
 #### Used versions
 
