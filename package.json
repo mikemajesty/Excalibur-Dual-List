@@ -1,6 +1,6 @@
 {
   "name": "excalibur-duallist",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "[![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)]",
   "main": "excalibur-duallist.js",
   "scripts": {
