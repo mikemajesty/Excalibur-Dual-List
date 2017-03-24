@@ -4,8 +4,7 @@
     .controller('ExcaliburDualListController', ['$scope', '$filter', function($scope, $filter) {
 
       $scope.options = {
-        title: 'Demo: your title',
-        helpMessage: 'Demo: your help message',
+        title: {label: 'Demo: your title', helpMessage: 'Demo: your help message'},
         selectOptions: {initialText: "ALL", isDisable: false, uppercase: true},
         items: [
           { 'category': 'FF8', 'name': 'Squall Leonhart' },
@@ -16,8 +15,6 @@
           { 'category': 'FF9', 'name': 'Garnet' },
           { 'category': 'FF9', 'name': 'Vivi' },
 
-
-
           { 'category': 'FF7', 'name': 'Cloud Strife' },
           { 'category': 'FF7', 'name': 'Aerith Gainsborough' },
           { 'category': 'FF7', 'name': 'Vincent Valentine' },
@@ -25,9 +22,9 @@
         ],
         itemsOrderProperty: '[category, name]',
         categories: ["FF7", "FF8", "FF9"],
+        button: {leftText: "Move All" , rightText: "Move All"},
         selectedItems: []
       };
-
     }]);
 
 })(window.angular);
