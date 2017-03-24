@@ -1,4 +1,4 @@
-angular.module("app", []).directive("excaliburDualList", [function() {
+angular.module("excaliburDualList", []).directive("excaliburDualList", [function() {
 
 	return {
 		restrict: 'E',

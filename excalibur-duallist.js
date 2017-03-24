@@ -1,4 +1,4 @@
-angular.module("app", []).directive("excaliburDualList", [function() {
+angular.module("excaliburDualList", []).directive("excaliburDualList", [function() {
 
 	return {
 		restrict: 'E',
@@ -19,7 +19,7 @@ angular.module("app", []).directive("excaliburDualList", [function() {
 				}
 			};
 		},
-		templateUrl: 'excalibur-duallist.html'
+		templateUrl: 'bower_components/excalibur-duallist/excalibur-duallist.html'
 	};
 
 }]);
