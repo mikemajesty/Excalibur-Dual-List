@@ -1,6 +1,7 @@
 # Excalibur-Dual-List - The DualList easier to use in angular.
 
-[![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)](https://postimg.org/image/72a6usiyb/)
+[![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)](https://postimg.org/image/72a6usiyb/) [![sowrd.png](https://s10.postimg.org/vhww0ang9/sowrd.png)](https://postimg.org/image/cpl0wpr1x/)
+
 
 ## Try it yourself.
 [click here](https://excalibur-dual-list.herokuapp.com/)
