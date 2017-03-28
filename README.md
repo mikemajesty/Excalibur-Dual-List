@@ -1,4 +1,4 @@
-# Excalibur-Dual-List - The DualList easier to use in angular.  [![sowrd.png](https://s10.postimg.org/vhww0ang9/sowrd.png)](https://postimg.org/image/cpl0wpr1x/)
+# Excalibur-Dual-List - The DualList easier to use in angular. [![sowrd.png](https://s29.postimg.org/7zzlhnsc7/sowrd.png  =20x20)](https://postimg.org/image/686mmr8z7/)
 
 [![duallistGif.gif](https://s21.postimg.org/qk4uaqfw7/duallist_Gif.gif)](https://postimg.org/image/72a6usiyb/)
 
