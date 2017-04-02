@@ -31,7 +31,7 @@ $scope.myModel = {selectItem: {}};
 $scope.options = {
   title: {label: 'Demo: your title', helpMessage: 'Demo: your help message'},
   selectOptions: {initialText: "ALL", isDisable: false, uppercase: true},
-  selectHeight: 'md',
+  boxItemsHeight: 'md',
   items: [
     { 'category': 'FF8', 'name': 'Squall Leonhart' },
     { 'category': 'FF8', 'name': 'Quistis Trepe' },
@@ -70,7 +70,7 @@ $scope.options = {
 * **selectOptions: {initialText}**(optional): First text that will displayed in first select input element.;
 * **selectOptions: {isDisable}**(optional): Indicates if the first select text is disabled.;
 * **selectOptions: {uppercase}**(optional): Indicates if the all text options in select input is uppercase.;
-* **selectHeight:**(required): Indicates the size of the item box. [{'xs': 150px}, {'sm': 225px}, {'md': 300px}, , {'lg': 450px}];
+* **boxItemsHeight:**(optional): Indicates the size of the item box. [{'xs': 150px}, {'sm': 225px}, {'md': 300px}, , {'lg': 450px}];
 * **items:**(required): Item that will appear on the no dual list.;
 * **itemsOrderProperty:**(optional): Order of the items will appear in the duallist.;
 * **categories:**(required): Items that will appear in select that it be used to filter the duallist.;
