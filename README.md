@@ -26,27 +26,30 @@ Then refer to your module
 ##### In your controller use the code below
 
 ```JavaScript
+$scope.myModel = {selectItem: {}};
+
 $scope.options = {
-    title: {label: 'Demo: your title', helpMessage: 'Demo: your help message'},
-    selectOptions: {initialText: "ALL", isDisable: false, uppercase: true},
-    items: [
-      { 'category': 'FF8', 'name': 'Squall Leonhart' },
-      { 'category': 'FF8', 'name': 'Quistis Trepe' },
-      { 'category': 'FF8', 'name': 'Zell Dincht' },
+  title: {label: 'Demo: your title', helpMessage: 'Demo: your help message'},
+  selectOptions: {initialText: "ALL", isDisable: false, uppercase: true},
+  selectHeight: 'md',
+  items: [
+    { 'category': 'FF8', 'name': 'Squall Leonhart' },
+    { 'category': 'FF8', 'name': 'Quistis Trepe' },
+    { 'category': 'FF8', 'name': 'Zell Dincht' },
 
-      { 'category': 'FF9', 'name': 'Zidane' },
-      { 'category': 'FF9', 'name': 'Garnet' },
-      { 'category': 'FF9', 'name': 'Vivi' },
+    { 'category': 'FF9', 'name': 'Zidane' },
+    { 'category': 'FF9', 'name': 'Garnet' },
+    { 'category': 'FF9', 'name': 'Vivi' },
 
-      { 'category': 'FF7', 'name': 'Cloud Strife' },
-      { 'category': 'FF7', 'name': 'Aerith Gainsborough' },
-      { 'category': 'FF7', 'name': 'Vincent Valentine' },
+    { 'category': 'FF7', 'name': 'Cloud Strife' },
+    { 'category': 'FF7', 'name': 'Aerith Gainsborough' },
+    { 'category': 'FF7', 'name': 'Vincent Valentine' },
 
-    ],
-    itemsOrderProperty: '[category, name]',
-    categories: ["FF7", "FF8", "FF9"],
-    button: {leftText: "Move All" , rightText: "Move All"},
-    selectedItems: []
+  ],
+  itemsOrderProperty: '[category, name]',
+  categories: ["FF7", "FF8", "FF9"],
+  button: {leftText: "Move All" , rightText: "Move All"},
+  selectedItems: []
 };
 
 ```
@@ -54,7 +57,7 @@ $scope.options = {
 ##### In your page use
 
 ```Html
-  <excalibur-dual-list options="options"> </excalibur-dual-list>
+  <excalibur-dual-list ng-model='myModel.selectItem' options="options"> </excalibur-dual-list>
 ```
 
 
@@ -65,8 +68,9 @@ $scope.options = {
 * **title: {helpMessage}**(optional): Sub label in input text.;
 * **selectOptions:**(optional): Information about the input select.;
 * **selectOptions: {initialText}**(optional): First text that will displayed in first select input element.;
-* **selectOptions: {isDisable}**(optional): Indicated if the first select text is disabled.;
-* **selectOptions: {uppercase}**(optional): Indicated if the all text options in select input is uppercase.;
+* **selectOptions: {isDisable}**(optional): Indicates if the first select text is disabled.;
+* **selectOptions: {uppercase}**(optional): Indicates if the all text options in select input is uppercase.;
+* **selectHeight:**(required): Indicates the size of the item box. [{'xs': 150px}, {'sm': 225px}, {'md': 300px}, , {'lg': 450px}];
 * **items:**(required): Item that will appear on the no dual list.;
 * **itemsOrderProperty:**(optional): Order of the items will appear in the duallist.;
 * **categories:**(required): Items that will appear in select that it be used to filter the duallist.;
@@ -78,10 +82,9 @@ $scope.options = {
 #### Used versions
 
 ##### Bootstrap 
-"version": "3.3.7"
-
+"version": `3.3.7`
 ##### Angular
-version": "1.2.32 
+version": `1.2.32` 
 <hr>
 
 ### License
