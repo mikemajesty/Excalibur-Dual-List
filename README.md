@@ -13,7 +13,7 @@
 
 # How to use
 
-##### Import to your project the dualListDirective.js and duallist.cs files in bower_components folder
+##### Import to your project the excalibur-duallist(min).js and excalibur-duallist(min).cs files in bower_components folder
 ```JavaScript
   <script type="text/javascript" src="/bower_components/excalibur-duallist/dist/js/excalibur-duallist.min.js"></script>
   <link rel="stylesheet" href="/bower_components/excalibur-duallist/dist/css/excalibur-duallist.min.css">
