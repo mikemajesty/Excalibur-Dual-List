@@ -8,7 +8,7 @@
 
 # How to install
 ```JavaScript
- bower install excalibur-duallist
+ bower install excalibur-duallist --save
 ```
 
 # How to use
