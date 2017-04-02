@@ -29,3 +29,19 @@
 .dualmultiselect .list ul li a:hover {
   text-decoration: none;
 }
+
+.dualmultiselect .xs {
+  height: 150px;
+}
+
+.dualmultiselect .sm {
+  height: 225px;
+}
+
+.dualmultiselect .md {
+  height: 300px;
+}
+
+.dualmultiselect .lg {
+  height: 450px;
+}

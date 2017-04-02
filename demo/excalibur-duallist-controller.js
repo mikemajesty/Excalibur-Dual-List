@@ -2,10 +2,13 @@
   'use strict';
   angular.module('app')
     .controller('ExcaliburDualListController', ['$scope', '$filter', function($scope, $filter) {
+      
+      $scope.myModel = {item: {}};
 
       $scope.options = {
         title: {label: 'Demo: your title', helpMessage: 'Demo: your help message'},
         selectOptions: {initialText: "ALL", isDisable: false, uppercase: true},
+        selectHeight: 'md',
         items: [
           { 'category': 'FF8', 'name': 'Squall Leonhart' },
           { 'category': 'FF8', 'name': 'Quistis Trepe' },
