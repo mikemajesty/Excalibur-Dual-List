@@ -84,7 +84,7 @@ $scope.options = {
 ##### Bootstrap 
 "version": `3.3.7`
 ##### Angular
-version": `1.2.32` 
+"version": `1.2.32` 
 <hr>
 
 ### License
