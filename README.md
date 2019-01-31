@@ -1,6 +1,6 @@
-# Excalibur Dual List - The Bootstrap Dual List easier to use in angular [![rsz_sowrd.png](https://s27.postimg.org/eotggzioj/rsz_sowrd.png)](https://postimg.org/image/om4ha1qa7/)
+# Excalibur Dual List - The Bootstrap Dual List easier to use in angular
 
-[![excalibur.gif](https://s28.postimg.org/byvkcvvwd/excalibur.gif)](https://postimg.org/image/l6nstl2yh/)
+[![Capture.png](https://i.postimg.cc/Y2mDCtz3/Capture.png)](https://postimg.cc/5jbSPdGY)
 
 
 ## Try it yourself.
